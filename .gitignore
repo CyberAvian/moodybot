@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Visual Studio Code
+.vscode
+
+# Random Files
+get-pip.py
