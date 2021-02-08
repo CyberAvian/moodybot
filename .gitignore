@@ -131,5 +131,9 @@ dmypy.json
 # Visual Studio Code
 .vscode
 
+# Repl.it
+poetry.lock
+pyproject.toml
+
 # Random Files
 get-pip.py
