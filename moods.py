@@ -13,7 +13,7 @@ def get_song(mood = ''):
         for i in data['Songs']:
             # If the songs match the mood,
             # it adds to a empty list
-            if i['mood'] == mood:
+            if i['mood'] == mood.capitalize():
                 random_song.append(i)
 
         # Returns a random song from list
