@@ -1,0 +1,81 @@
+{
+    "Songs": [
+        {
+            "name": "September",            
+            "artist": "Earth, Wind & Fire",
+            "mood": "Happy",
+            "SpotifyURL": "https://open.spotify.com/track/2grjqo0Frpf2okIBiifQKs?si=QTQPy3H6Sy6bMJtR3XSplQ",
+            "YoutubeLink": "https://www.youtube.com/watch?v=Gs069dndIYk"
+        },
+        {
+            "name": "Don't Stop Believin'",
+            "artist": "Journey",
+            "mood": "Happy",
+            "SpotifyURL": "https://open.spotify.com/track/4bHsxqR3GMrXTxEPLuK5ue?si=i_-h0ci9SOOsT38_PWDPBQ",
+            "YoutubeLink": "https://www.youtube.com/watch?v=1k8craCGpgs"
+        },
+        {
+            "name": "Can't Stop this feelin",
+            "artist": "Justin Timberlake",
+            "mood": "Happy",
+            "SpotifyURL": "https://open.spotify.com/track/1WkMMavIMc4JZ8cfMmxHkI?si=m-pBB9DQQei5VGkeeEcVqA",
+            "YoutubeLink": "https://www.youtube.com/watch?v=VUdeIFQtDYU"
+        },
+        {
+            "name": "Uptown Funk",
+            "artist": "Bruno Mars",
+            "mood": "Happy",
+            "SpotifyURL": "https://open.spotify.com/track/32OlwWuMpZ6b0aN2RZOeMS?si=mqwiDgCdSF2Sl-vgPEvuFg",
+            "YoutubeLink": "https://www.youtube.com/watch?v=OPf0YbXqDm0"
+        },
+        {
+            "name": "Stargazing",
+            "artist": "Kygo",
+            "mood": "Happy",
+            "SpotifyURL": "https://open.spotify.com/track/0Zbbxnx4SGGHoIow4PpISP?si=fBhmJBHTRveFLZw1Td0shw",
+            "YoutubeLink": "https://www.youtube.com/watch?v=hEdvvTF5js4"
+        },
+        {
+            "name": "Popular Monster",            
+            "artist": "Falling in Reverse",
+            "mood": "Angry",
+            "SpotifyURL": "https://open.spotify.com/track/4GssB27iJeqmfGxS94Tfij?si=otjIn03yR_yU24iUKlphEQ",
+            "YoutubeLink": "https://www.youtube.com/watch?v=jakpo7tj7Qw"
+        },
+        {
+            "name": "Bow Down",
+            "artist": "I Prevail",
+            "mood": "Angry",
+            "SpotifyURL": "https://open.spotify.com/track/5qD3Qv8Wu3r5uRD0DahcZy?si=kDctaJ7ETpOf9XUb86aBow",
+            "YoutubeLink": "https://www.youtube.com/watch?v=n2EjeMx4bSg"
+        },
+        {
+            "name": "Running with Scissors",
+            "artist": "I See Stars",
+            "mood": "Angry",
+            "SpotifyURL": "https://open.spotify.com/track/6HjkNCwInDttzD7jZcbBFz?si=Llkp-TsjTB6ixiaABnE3Jg",
+            "YoutubeLink": "https://www.youtube.com/watch?v=tswY_mtllGA"
+        },
+        {
+            "name": "Lonely",
+            "artist": "Justin Bieber",
+            "mood": "Sad",
+            "SpotifyURL": "https://open.spotify.com/track/4y4spB9m0Q6026KfkAvy9Q?si=TrEafq2xQrm1fgN87yO8ig",
+            "YoutubeLink": "https://www.youtube.com/watch?v=GtwHKYKt5gE"
+        },
+        {
+            "name": "Stay With Me",
+            "artist": "Sam Smith",
+            "mood": "Sad",
+            "SpotifyURL": "https://open.spotify.com/track/5Nm9ERjJZ5oyfXZTECKmRt?si=IP4-EkTkQNiypNDpquMmYw",
+            "YoutubeLink": "https://www.youtube.com/watch?v=pB-5XG-DbAA"
+        },
+        {
+            "name": "Say You Won't Let Go",
+            "artist": "James Arthur",
+            "mood": "Sad",
+            "SpotifyURL": "https://open.spotify.com/track/5uCax9HTNlzGybIStD3vDh?si=dIBQHIp7R6SXsMEMpp5fOw",
+            "YoutubeLink": "https://www.youtube.com/watch?v=0yW7w8F2TVA"
+        }
+    ]
+}
