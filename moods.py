@@ -2,7 +2,7 @@ import random
 import  json
 
 # Gets a random song by Mood
-def get_song(mood = ''):
+def get_song_by_mood(mood = ''):
     random_song = []
 
     # Opens songs.json
