@@ -1,52 +1,35 @@
 import random
+import  json
 
-def random_happy_song():
-    dont_stop_believin = "4bHsxqR3GMrXTxEPLuK5ue"
-    cant_stop_this_feelin = "1WkMMavIMc4JZ8cfMmxHkI"
-    uptown_funk = "32OlwWuMpZ6b0aN2RZOeMS"
-    september = "2grjqo0Frpf2okIBiifQKs"
-    stargazing = "0Zbbxnx4SGGHoIow4PpISP"
+# Gets a random song by Mood
+def get_song_by_mood(mood = ''):
+    random_song = []
 
-    happy_songs = [dont_stop_believin,cant_stop_this_feelin,uptown_funk,september]
+    # Opens songs.json
+    with open('./songs.json') as json_file:
+        data = json.load(json_file)
 
-    return random.choice(happy_songs)
+        # Displays the songs recieved from json
+        for i in data['Songs']:
+            # If the songs match the mood,
+            # it adds to a empty list
+            if i['mood'] == mood.capitalize():
+                random_song.append(i)
 
-def random_sad_song():
-    lonely = "4y4spB9m0Q6026KfkAvy9Q"
-    stay_with_me = "5Nm9ERjJZ5oyfXZTECKmRt"
-    say_you_wont_let_go = "5uCax9HTNlzGybIStD3vDh"
+        # Returns a random song from list
+        return random.choice(random_song)
 
-    sad_songs = [lonely,stay_with_me,say_you_wont_let_go]
+def convert_song_to_string(mood = {}):
+    song = []
 
-    return random.choice(sad_songs)
+    song_string = ""
 
-def random_angry_song():
-    popular_monster = "4GssB27iJeqmfGxS94Tfij"
-    bow_down = "5qD3Qv8Wu3r5uRD0DahcZy"
-    running_w_scissors = "6HjkNCwInDttzD7jZcbBFz"
+    # Adds mood to song list
+    for i in mood.keys():
+        song.append(f"{i.capitalize()}: {mood[i]}\n")
 
-    angry_songs = [popular_monster,bow_down,running_w_scissors]
+    # Converts song list to string
+    for s in song:      
+        song_string += s
 
-    return random.choice(angry_songs)
-
-
-def get_random_mood_song(mood = ''):
-    pass
-
-
-def display_mood_song(mood = "".lower()):
-    link = "https://open.spotify.com/track/"
-    
-    if mood == "happy":
-        print("Moody: Here's a happy song to make you even happier!!😃\n" + link + random_happy_song() +"\n")
-
-    elif mood == "sad":
-        print("Moody: I'm sorry your sad, here's a sad song. 😢\n" + link + random_sad_song() +"\n")
-
-    elif mood == "angry":
-        print("Moody: I'm angry because your angry! Here's a angry song 😡\n" + link + random_angry_song() +"\n")
-
-    else:
-        print("Moody doesn't know that mood yet, Try a different keyword.")
-
-display_mood_song('happy')
+    return song_string
