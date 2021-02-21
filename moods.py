@@ -19,9 +19,11 @@ def get_song_by_mood(mood = ''):
         # Returns a random song from list
         return random.choice(random_song)
 
-def convert_song_to_string(mood = {}):
+def convert_song_to_string(current_mood = ''):
+    # Gets random song
+    mood = get_song_by_mood(current_mood)
+    
     song = []
-
     song_string = ""
 
     # Adds mood to song list
@@ -29,7 +31,7 @@ def convert_song_to_string(mood = {}):
         song.append(f"{i.capitalize()}: {mood[i]}\n")
 
     # Converts song list to string
-    for s in song:      
+    for s in song:
         song_string += s
 
     return song_string
