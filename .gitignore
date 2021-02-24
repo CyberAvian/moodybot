@@ -132,6 +132,7 @@ dmypy.json
 .vscode
 
 # Repl.it
+.replit
 poetry.lock
 pyproject.toml
 
