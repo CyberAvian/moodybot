@@ -2,7 +2,8 @@ from googleapiclient.discovery import build
 import os
 import random
 
-def convert_song_to_string(current_mood = ''):
+
+def convert_song_to_string(current_mood=''):
     # Gets Random song based on Mood
     mood = get_songs_from_playlist(current_mood)
 
@@ -19,13 +20,14 @@ def convert_song_to_string(current_mood = ''):
 
     return song_string
 
+
 # Adds Youtube Playlist items to Python list and randomizes it
 def get_songs_from_playlist(mood=''):
     songs = []
 
     # Gets API Key
     api_key = os.environ.get('API_KEY')
-    service = build('youtube','v3',developerKey=api_key)
+    service = build('youtube', 'v3', developerKey=api_key)
 
     # Gets playlist based on Mood
     playlist = service.playlistItems().list(
@@ -36,12 +38,14 @@ def get_songs_from_playlist(mood=''):
 
     # Gets all items Titles and Links and adds it to a list
     for item in response["items"]:
-        yt_url = "https://www.youtube.com/watch?v={}".format(item['snippet']['resourceId']['videoId'])
+        yt_url = "https://www.youtube.com/watch?v={}".format(
+            item['snippet']['resourceId']['videoId'])
         title = item['snippet']['title']
 
         songs.append({title: yt_url})
 
     return random.choice(songs)
+
 
 # Gets Current Mood and Returns the Playlist ID
 def get_mood(mood=''):
